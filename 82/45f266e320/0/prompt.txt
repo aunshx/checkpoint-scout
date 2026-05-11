@@ -1,0 +1,39 @@
+<task-notification>
+<task-id>bjaw848sk</task-id>
+<summary>Monitor event: "generate.py — artifact generation"</summary>
+<event>Generating artifacts for 5 pain moments...
+Generating artifacts for huggingface/transformers#e43473ed...
+Generating artifacts for anthropics/claude-code#8cf3e16b...
+Generating artifacts for huggingface/transformers#39be3d99...
+Generating artifacts for domattioli/DomI#5a9ca8c6...
+Generating artifacts for ggerganov/llama.cpp#e0e46557...</event>
+</task-notification>
+
+---
+
+<task-notification>
+<task-id>b2vbcpt7n</task-id>
+<tool-use-id>toolu_01JKoHETnhhxKK2XRuupgLQr</tool-use-id>
+<output-file>/private/tmp/claude-501/-Users-aunsh-Dev-checkpoint-scout/bcc98d22-df73-4393-be74-3f951c8a769e/tasks/b2vbcpt7n.output</output-file>
+<status>completed</status>
+<summary>Background command "python src/generate.py 2&gt;&amp;1" completed (exit code 0)</summary>
+</task-notification>
+
+---
+
+Before committing, add one more file: outputs/runs/{timestamp}/dashboard.md
+
+A single markdown file that gives a reviewer a one-page view of everything the agent produced. Include:
+
+1. Title: "Checkpoint Scout — Run Summary"
+2. Run timestamp
+3. A 2-3 sentence context paragraph noting the funnel: 2,774 raw candidates from 15 OSS repos + 6 pain-phrase queries → 100 prioritized for classification → 5 qualified pain moments (score ≥ 6) → 15 artifacts generated (3 per pain moment)
+4. A markdown table with columns: Rank | Repo | Pain Type | Score | One-line Signal | Artifacts
+   - Rank 1-5 by pain_score descending
+   - One-line Signal is a short human-readable summary of what's happening
+   - Artifacts column has three relative markdown links: [Comment](pain_moment_NNN/public_comment.md) · [Outreach](pain_moment_NNN/outreach.md) · [Case Study](pain_moment_NNN/case_study.md)
+5. A short closing note: "All artifacts are drafts. Nothing posted to GitHub or sent to anyone. Human-in-the-loop by design — see writeup for the design rationale."
+
+Generate from qualified.json and existing files. No new LLM calls needed.
+
+Then commit Stage 3 with the message you proposed, adding a line about the dashboard. Push everything to origin.
