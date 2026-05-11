@@ -1,0 +1,92 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "89ce24cd13ea",
+  "session_id": "bcc98d22-df73-4393-be74-3f951c8a769e",
+  "strategy": "manual-commit",
+  "created_at": "2026-05-11T23:00:16.179823Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".github/workflows/daily-scout.yml",
+    ".github/workflows/deploy.yml",
+    "scripts/build_dashboard_data.py",
+    "web/.gitignore",
+    "web/README.md",
+    "web/eslint.config.js",
+    "web/index.html",
+    "web/package-lock.json",
+    "web/package.json",
+    "web/postcss.config.js",
+    "web/public/data.json",
+    "web/public/vite.svg",
+    "web/src/App.tsx",
+    "web/src/assets/react.svg",
+    "web/src/components/ArtifactTabs.tsx",
+    "web/src/components/Footer.tsx",
+    "web/src/components/Funnel.tsx",
+    "web/src/components/Hero.tsx",
+    "web/src/components/PainMomentCard.tsx",
+    "web/src/index.css",
+    "web/src/main.tsx",
+    "web/src/types.ts",
+    "web/src/vite-env.d.ts",
+    "web/tailwind.config.js",
+    "web/tsconfig.app.json",
+    "web/tsconfig.json",
+    "web/tsconfig.node.json",
+    "web/vite.config.ts"
+  ],
+  "agent": "Claude Code",
+  "model": "",
+  "turn_id": "d21e6f09a104",
+  "checkpoint_transcript_start": 549,
+  "transcript_lines_at_start": 549,
+  "token_usage": {
+    "input_tokens": 40,
+    "cache_creation_tokens": 24242,
+    "cache_read_tokens": 6181905,
+    "output_tokens": 12376,
+    "api_call_count": 30
+  },
+  "session_metrics": {
+    "turn_count": 15
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-05-11T23:00:16.147659Z",
+    "agent_lines": 6106,
+    "agent_removed": 0,
+    "human_added": 32,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 6138,
+    "total_lines_changed": 6144,
+    "agent_percentage": 99.38151041666666,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 3711,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".claude/settings.local.json": 14,
+        "data/classified/20260511_143141/qualified.json": 1,
+        "data/classified/20260511_143141/scored.json": 1802,
+        "data/classified/20260511_143718/qualified.json": 92,
+        "data/classified/20260511_143718/scored.json": 1802
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 20,
+      "user_lines_removed": 0,
+      "agent_lines_added": 9803,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".claude/settings.local.json": 20
+      }
+    }
+  ]
+}
