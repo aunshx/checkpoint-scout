@@ -1,0 +1,40 @@
+# Schedule will activate once ANTHROPIC_API_KEY and GITHUB_TOKEN are added to
+# repo secrets. Currently scaffolded only.
+name: Daily Scout Run
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.SCOUT_GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python src/acquire.py
+          python src/classify.py
+          python src/generate.py
+          python src/dashboard.py
+          python scripts/build_dashboard_data.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "checkpoint-scout[bot]"
+          git config user.email "checkpoint-scout[bot]@users.noreply.github.com"
+          git add data/ outputs/ web/public/data.json
+          git diff --cached --quiet || git commit -m "data: scheduled run $(date -u +%Y-%m-%d) [skip ci]"
+          git push

@@ -1,0 +1,46 @@
+import { ArrowRight } from 'lucide-react';
+import type { Funnel as FunnelData } from '../types';
+
+interface Props {
+  funnel: FunnelData;
+  runTimestamp: string;
+}
+
+const stats = [
+  { key: 'raw_candidates' as const, label: 'Raw candidates' },
+  { key: 'classified' as const, label: 'Classified' },
+  { key: 'qualified' as const, label: 'Qualified pain moments' },
+  { key: 'artifacts_generated' as const, label: 'Artifacts generated' },
+];
+
+export function Funnel({ funnel, runTimestamp }: Props) {
+  const formatted = new Date(runTimestamp).toLocaleString('en-US', {
+    year: 'numeric', month: 'short', day: 'numeric',
+    hour: '2-digit', minute: '2-digit', timeZoneName: 'short',
+  });
+
+  return (
+    <div className="mt-10">
+      <div className="flex flex-wrap items-center justify-center gap-2">
+        {stats.map((s, i) => (
+          <div key={s.key} className="flex items-center gap-2">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl px-5 py-4 text-center min-w-[130px]">
+              <div className="text-3xl font-bold text-[#0091FF]">
+                {funnel[s.key].toLocaleString()}
+              </div>
+              <div className="text-xs text-slate-400 mt-1 leading-snug">{s.label}</div>
+            </div>
+            {i < stats.length - 1 && (
+              <ArrowRight className="text-slate-600 shrink-0" size={18} />
+            )}
+          </div>
+        ))}
+      </div>
+      <p className="text-center text-xs text-slate-500 mt-4">
+        Last run: {formatted}
+        {' · '}
+        <span className="italic">Next scheduled run: daily 6am UTC (cron disabled until production credentials wired)</span>
+      </p>
+    </div>
+  );
+}
