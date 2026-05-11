@@ -24,19 +24,19 @@ export function Funnel({ funnel, runTimestamp }: Props) {
       <div className="flex flex-wrap items-center justify-center gap-2">
         {stats.map((s, i) => (
           <div key={s.key} className="flex items-center gap-2">
-            <div className="bg-slate-900 border border-slate-800 rounded-xl px-5 py-4 text-center min-w-[130px]">
-              <div className="text-3xl font-bold text-[#0091FF]">
+            <div className="bg-white border border-stone-200 rounded-xl px-5 py-4 text-center min-w-[130px] shadow-sm">
+              <div className="text-4xl font-bold text-blue-600">
                 {funnel[s.key].toLocaleString()}
               </div>
-              <div className="text-xs text-slate-400 mt-1 leading-snug">{s.label}</div>
+              <div className="text-sm text-stone-600 mt-2 leading-snug">{s.label}</div>
             </div>
             {i < stats.length - 1 && (
-              <ArrowRight className="text-slate-600 shrink-0" size={18} />
+              <ArrowRight className="text-stone-400 shrink-0" size={18} />
             )}
           </div>
         ))}
       </div>
-      <p className="text-center text-xs text-slate-500 mt-4">
+      <p className="text-center text-xs text-stone-500 mt-4">
         Last run: {formatted}
         {' · '}
         <span className="italic">Next scheduled run: daily 6am UTC (cron disabled until production credentials wired)</span>

@@ -8,13 +8,13 @@ interface Props {
 export function Hero({ data }: Props) {
   return (
     <section className="py-16 text-center px-4">
-      <h1 className="text-4xl font-bold text-slate-100 tracking-tight">
+      <h1 className="text-5xl font-bold tracking-tight text-stone-900">
         Checkpoint Scout
       </h1>
-      <p className="mt-3 text-lg text-[#0091FF] font-medium">
+      <p className="mt-2 text-xl text-blue-600">
         AI-coding pain moments in public OSS, surfaced for Entire's GTM team
       </p>
-      <p className="mt-3 text-slate-400 max-w-xl mx-auto text-base leading-relaxed">
+      <p className="mt-4 text-base text-stone-600 max-w-2xl mx-auto leading-relaxed">
         Scans public GitHub for moments where open-source maintainers struggle
         with AI-generated code. Drafts useful artifacts for review.
       </p>

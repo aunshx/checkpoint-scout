@@ -2,16 +2,16 @@ import { GitFork } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="border-t border-slate-800 py-8 px-4 text-center">
-      <p className="text-sm text-slate-500">
+    <footer className="border-t border-stone-200 py-8 px-4 text-center">
+      <p className="text-sm text-stone-500">
         All artifacts are drafts. Nothing posted. Human-in-the-loop by design.
       </p>
-      <div className="mt-3 flex items-center justify-center gap-4 text-xs text-slate-600">
+      <div className="mt-3 flex items-center justify-center gap-4 text-xs text-stone-500">
         <a
           href="https://github.com/aunshx/checkpoint-scout"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 hover:text-[#0091FF] transition-colors"
+          className="inline-flex items-center gap-1.5 hover:text-blue-600 transition-colors"
         >
           <GitFork size={13} />
           aunshx/checkpoint-scout
