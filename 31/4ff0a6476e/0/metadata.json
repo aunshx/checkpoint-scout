@@ -1,0 +1,76 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "314ff0a6476e",
+  "session_id": "bcc98d22-df73-4393-be74-3f951c8a769e",
+  "strategy": "manual-commit",
+  "created_at": "2026-05-11T23:41:52.771607Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "scripts/build_dashboard_data.py",
+    "web/package-lock.json",
+    "web/package.json",
+    "web/public/data.json",
+    "web/src/App.tsx",
+    "web/src/components/ArtifactTabs.tsx",
+    "web/src/components/CandidatesTable.tsx",
+    "web/src/components/PainMomentCard.tsx",
+    "web/src/components/PainMomentModal.tsx",
+    "web/src/types.ts"
+  ],
+  "agent": "Claude Code",
+  "model": "",
+  "turn_id": "a1a21270e3bc",
+  "token_usage": {
+    "input_tokens": 387,
+    "cache_creation_tokens": 278814,
+    "cache_read_tokens": 30223251,
+    "output_tokens": 90341,
+    "api_call_count": 184
+  },
+  "session_metrics": {
+    "turn_count": 27
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-05-11T23:41:52.73477Z",
+    "agent_lines": 1473,
+    "agent_removed": 97,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1473,
+    "total_lines_changed": 1570,
+    "agent_percentage": 100,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 3719,
+      "user_lines_removed": 0,
+      "agent_lines_added": 16961,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".claude/settings.local.json": 22,
+        "data/classified/20260511_143141/qualified.json": 1,
+        "data/classified/20260511_143141/scored.json": 1802,
+        "data/classified/20260511_143718/qualified.json": 92,
+        "data/classified/20260511_143718/scored.json": 1802
+      }
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 3720,
+      "user_lines_removed": 0,
+      "agent_lines_added": 18434,
+      "agent_lines_removed": 97,
+      "user_added_per_file": {
+        ".claude/settings.local.json": 23,
+        "data/classified/20260511_143141/qualified.json": 1,
+        "data/classified/20260511_143141/scored.json": 1802,
+        "data/classified/20260511_143718/qualified.json": 92,
+        "data/classified/20260511_143718/scored.json": 1802
+      }
+    }
+  ]
+}
