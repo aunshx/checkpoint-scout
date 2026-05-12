@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "d31071969e53",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "data/tool_cache/000688bdd76f2c2d4ea32d28223e19b9.json",
+    "data/tool_cache/084ba02de899c5d7b45800c79f6e8df9.json",
+    "data/tool_cache/1ab8b07b6edac5269393d1927c9659af.json",
+    "data/tool_cache/2639d92a37ee251fc91903c04d49b8ae.json",
+    "data/tool_cache/49f247ae5f35e3fe00d73e8eda23cdf7.json",
+    "data/tool_cache/69049b9a34b0678871c687f2a2cfd6ec.json",
+    "data/tool_cache/7184847608db46789afe80185db1be61.json",
+    "data/tool_cache/92ea330d3cac0e81158331dec18e4170.json",
+    "data/tool_cache/9bf12aca6faa4af79cb96aa2d995cac5.json",
+    "data/tool_cache/aecce21cd48cc237e04325ad9c51d14b.json",
+    "data/tool_cache/c93f0ec6d4169dd4b008c3fa0eca2bba.json",
+    "data/tool_cache/de4100f7643543429fb365012c42026e.json"
+  ],
+  "sessions": [
+    {
+      "metadata": "/d3/1071969e53/0/metadata.json",
+      "transcript": "/d3/1071969e53/0/full.jsonl",
+      "content_hash": "/d3/1071969e53/0/content_hash.txt",
+      "prompt": "/d3/1071969e53/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 635,
+    "cache_creation_tokens": 362625,
+    "cache_read_tokens": 71873850,
+    "output_tokens": 122117,
+    "api_call_count": 310
+  }
+}

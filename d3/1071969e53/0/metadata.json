@@ -1,0 +1,66 @@
+{
+  "cli_version": "0.6.1",
+  "checkpoint_id": "d31071969e53",
+  "session_id": "bcc98d22-df73-4393-be74-3f951c8a769e",
+  "strategy": "manual-commit",
+  "created_at": "2026-05-12T01:32:35.922195Z",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "data/tool_cache/000688bdd76f2c2d4ea32d28223e19b9.json",
+    "data/tool_cache/084ba02de899c5d7b45800c79f6e8df9.json",
+    "data/tool_cache/1ab8b07b6edac5269393d1927c9659af.json",
+    "data/tool_cache/2639d92a37ee251fc91903c04d49b8ae.json",
+    "data/tool_cache/49f247ae5f35e3fe00d73e8eda23cdf7.json",
+    "data/tool_cache/69049b9a34b0678871c687f2a2cfd6ec.json",
+    "data/tool_cache/7184847608db46789afe80185db1be61.json",
+    "data/tool_cache/92ea330d3cac0e81158331dec18e4170.json",
+    "data/tool_cache/9bf12aca6faa4af79cb96aa2d995cac5.json",
+    "data/tool_cache/aecce21cd48cc237e04325ad9c51d14b.json",
+    "data/tool_cache/c93f0ec6d4169dd4b008c3fa0eca2bba.json",
+    "data/tool_cache/de4100f7643543429fb365012c42026e.json"
+  ],
+  "agent": "Claude Code",
+  "model": "",
+  "turn_id": "3295b1237d79",
+  "token_usage": {
+    "input_tokens": 635,
+    "cache_creation_tokens": 362625,
+    "cache_read_tokens": 71873850,
+    "output_tokens": 122117,
+    "api_call_count": 310
+  },
+  "session_metrics": {
+    "turn_count": 87
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-05-12T01:32:35.866598Z",
+    "agent_lines": 410,
+    "agent_removed": 0,
+    "human_added": 60,
+    "human_modified": 1,
+    "human_removed": 0,
+    "total_committed": 471,
+    "total_lines_changed": 472,
+    "agent_percentage": 86.86440677966102,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 86,
+      "user_lines_removed": 1,
+      "agent_lines_added": 411,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".claude/settings.local.json": 25,
+        "README.md": 1,
+        "data/tool_cache/0d5b339cbe687b832f02b7d8e102150c.json": 6,
+        "data/tool_cache/d29d4085b385377db83ddbab94bc7fad.json": 54
+      },
+      "user_removed_per_file": {
+        "README.md": 1
+      }
+    }
+  ]
+}
