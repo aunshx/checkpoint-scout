@@ -716,3 +716,7 @@ When done, show me:
 - The git status summary
 - The build output confirming success
 - A confirmation that npm run dev works at the new base path
+
+---
+
+commit and push
