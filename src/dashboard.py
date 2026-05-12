@@ -100,8 +100,6 @@ def run() -> None:
     out = run_dir / "dashboard.md"
     out.write_text(content)
     print(f"Written: {out}")
-    print()
-    print(content)
 
 
 if __name__ == "__main__":
