@@ -1,0 +1,1 @@
+I want to push the entire entire.log to the repo as well
