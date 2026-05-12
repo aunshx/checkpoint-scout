@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.postimg.cc/SN4krnWH/logo.png" alt="Watchtower logo" width="120" />
+  <img src="https://i.postimg.cc/QxPgwKb1/logo.png" alt="Watchtower logo" width="120" />
 </p>
 
 <h1 align="center">Watchtower</h1>

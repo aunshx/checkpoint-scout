@@ -1,0 +1,40 @@
+{
+  "username": "ArthurZucker",
+  "recent_activity": [
+    {
+      "repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers/pull/45892",
+      "title": "Fix deepseek v4",
+      "body": "# What does this PR do?\r\n\r\n<!--\r\nCongratulations! You've made it this far! You're not quite done yet though.\r\n\r\nOnce merged, your PR is going to appear in the release notes with the title you set, so make sure it's a great title that fully reflects the extent of your awesome contribution.\r\n\r\nThen, please replace this with a description of the change and which issue is fixed (if applicable). Please also include relevant motivation and context. List any dependencies (if any) that are required for ",
+      "created_at": "2026-05-11T10:45:10+00:00"
+    },
+    {
+      "repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers/pull/45034",
+      "title": "Pass packed boundary metadata to Qwen3.5 linear-attention fast kernels from data collator",
+      "body": "# What does this PR do?\r\n\r\nThis is a follow up to https://github.com/huggingface/transformers/pull/44867\r\n\r\nThis PR fixes Qwen3.5 padding-free packed inputs on the linear-attention fast path by consuming collator-provided packed metadata. The linear-attention block now uses seq_idx for the causal convolution path and cu_seq_lens_q / cu_seq_lens_k for the FLA path, matching the repo\u2019s existing DataCollatorWithFlattening contract. I also added a deterministic fast-path regression test comparing pa",
+      "created_at": "2026-03-26T20:52:51+00:00"
+    },
+    {
+      "repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers/pull/45465",
+      "title": "[docs] contributing",
+      "body": "- refactors the \"Contribute to Transformers\" doc to be more lightweight and an easy entry point that links out to more dedicated guides\r\n- updates the `docs/README.md`",
+      "created_at": "2026-04-15T23:12:11+00:00"
+    },
+    {
+      "repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers/pull/45396",
+      "title": "Extract dynamic vision/audio tensors into standalone pure functions",
+      "body": "needed both claude and copilot's help on this one \ud83d\ude05 The idea is to make the vlms and their visual/audio encders compileable / exportable. here's a demo of the full model forward being compileable with these precomputed tensors.\r\n\r\n```python\r\n\"\"\"Demo: precomputed vision tensors enable torch.compile.\r\n\r\nWithout precomputation the vision encoder uses loops / .tolist() / repeat_interleave\r\nthat break torch.compile fullgraph mode. By computing ``image_cu_seqlens`` and\r\n``image_position_ids`` via ``tr",
+      "created_at": "2026-04-13T08:46:10+00:00"
+    },
+    {
+      "repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers/pull/39895",
+      "title": "Add Videoprism",
+      "body": "Fixes #39893. This pr adds the VideoPrism model by google deepmind. [Original repo](https://github.com/google-deepmind/videoprism)",
+      "created_at": "2025-08-04T17:37:52+00:00"
+    }
+  ]
+}

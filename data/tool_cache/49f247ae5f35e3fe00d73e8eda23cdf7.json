@@ -1,0 +1,47 @@
+{
+  "username": "domattioli",
+  "recent_activity": [
+    {
+      "repo": "domattioli/ADMESH-Domains",
+      "url": "https://github.com/domattioli/ADMESH-Domains/issues/43",
+      "title": "impl #41: Add Mixed-Element validation and tests",
+      "body": "## Implementation Follow-up to #41\n\n**Specification**: See #41 comment for detailed specification and requirements.  \n**Task breakdown**: [docs/ISSUE_41_TASK_BREAKDOWN.md](./docs/ISSUE_41_TASK_BREAKDOWN.md)  \n**Related**: #41 (specification), CHILmesh (round-trip validation)  \n\n---\n\n## Summary\n\nImplement Mixed-Element mesh support in ADMESH-Domains catalog:\n1. Add element_type validation (enum: triangle, quadrilateral, Mixed-Element)\n2. Unit tests for schema validation\n3. Integration test: fort1",
+      "created_at": "2026-05-11T04:20:26+00:00"
+    },
+    {
+      "repo": "domattioli/ADMESH-Domains",
+      "url": "https://github.com/domattioli/ADMESH-Domains/issues/44",
+      "title": "need to redo speckit constitution for the whole project",
+      "body": "all the individual specs have one, or we made one before we knew it was actually a common file type (guessed at what was in it v in the claude.md)",
+      "created_at": "2026-05-11T06:43:43+00:00"
+    },
+    {
+      "repo": "domattioli/ADMESH-Domains",
+      "url": "https://github.com/domattioli/ADMESH-Domains/issues/45",
+      "title": "chore: complete constitution check standardization for remaining specs",
+      "body": "# Follow-up to #44: Complete Constitution Standardization\n\n## Completed in #44 Phase 1\n- \u2705 Spec 027: Updated to include Principles V and VII\n- \u2705 Spec 010: Added complete constitution check\n- \u2705 Spec 028: Added complete constitution check\n- \u2705 Established standard format: `| Principle | Status | Justification |`\n\n## Remaining Work\n\n### Missing Constitution Checks (add these):\n- [ ] Spec 007-query-filters\n- [ ] Spec 031-compare-test-validate\n\n### Existing Constitution Checks (audit and update):\n- [ ",
+      "created_at": "2026-05-11T07:35:33+00:00"
+    },
+    {
+      "repo": "domattioli/ADMESH-Domains",
+      "url": "https://github.com/domattioli/ADMESH-Domains/issues/46",
+      "title": "chore: sync DomI@121636a",
+      "body": "DomI upstream advanced. Sync this repo before next write session.\n\n**Upstream commit:** [121636a](https://github.com/domattioli/DomI/commit/121636a9b00af8dbf0e41d7b69746d9f87e133d7)\n**Triggered by:** `push`\n\n### Changed paths\n```\nCLAUDE.md\n```\n\n### How to resolve\n\nOpen a Claude Code session in this repo and say:\n\n> sync from DomI\n\nClaude will invoke the `sync-from-domi` skill, refresh `.domi-pin`, and close this issue.\n\n### Manual resolution\n\n```bash\nbash skills/sync-from-domi/scripts/update_pin",
+      "created_at": "2026-05-11T08:23:43+00:00"
+    },
+    {
+      "repo": "domattioli/ADMESH-Domains",
+      "url": "https://github.com/domattioli/ADMESH-Domains/issues/48",
+      "title": "chore: sync DomI@121636a9b00af8dbf0e41d7b69746d9f87e133d7",
+      "body": "## DomI upstream has new changes\n\nDomI `main` was updated. Your `.domi-pin` is now out of date.\n\n**New DomI SHA:** `121636a9b00af8dbf0e41d7b69746d9f87e133d7`\n\n### What changed (2026-05-11)\n\n- `CLAUDE.md` \u2014 replaced legacy generic doc with DomI-specific governance (branch policy, push antipattern #31, skill closure protocol, sync contract)\n- `requirements.txt` \u2014 added root-level deps (manim>=0.20.0)\n- `scripts/instructions_on_start.sh` \u2014 added `claude/*` branch hard-stop + `.githooks/` auto-insta",
+      "created_at": "2026-05-11T22:26:44+00:00"
+    },
+    {
+      "repo": "domattioli/ADMESH",
+      "url": "https://github.com/domattioli/ADMESH/issues/55",
+      "title": "chore: sync DomI@121636a",
+      "body": "DomI upstream advanced. Sync this repo before next write session.\n\n**Upstream commit:** [121636a](https://github.com/domattioli/DomI/commit/121636a9b00af8dbf0e41d7b69746d9f87e133d7)\n**Triggered by:** `push`\n\n### Changed paths\n```\nCLAUDE.md\n```\n\n### How to resolve\n\nOpen a Claude Code session in this repo and say:\n\n> sync from DomI\n\nClaude will invoke the `sync-from-domi` skill, refresh `.domi-pin`, and close this issue.\n\n### Manual resolution\n\n```bash\nbash skills/sync-from-domi/scripts/update_pin",
+      "created_at": "2026-05-10T05:59:17+00:00"
+    }
+  ]
+}

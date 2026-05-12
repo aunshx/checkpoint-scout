@@ -1,0 +1,40 @@
+{
+  "username": "rmurdough",
+  "recent_activity": [
+    {
+      "repo": "jzaleski/ai-tools",
+      "url": "https://github.com/jzaleski/ai-tools/pull/2",
+      "title": "feat: Add `superpowers` and _Jira_ MCP + clean-up",
+      "body": "added L and XL as local models with different parameters for developer to decide optimal resource allocation for work\r\nadded superpowers and jira CLI to open code",
+      "created_at": "2026-04-21T14:59:35+00:00"
+    },
+    {
+      "repo": "npgsql/npgsql",
+      "url": "https://github.com/npgsql/npgsql/issues/2708",
+      "title": "Idle connections not being pruned since 4.1",
+      "body": "We have been using NpgSQL 4.010 with NpgSQL Entity Framework Core 2.2.4 for some time without any issue. We are not yet ready to upgrade to .Net Core 3 so we upgraded NpgSQL to 4.1.1 while leaving Entity Framework at 2.2. As soon as we went live we found our connection count in production steadily increasing until the point when Postgres became unresponsive. Our average connection count in production stays around 1000-1500 between two Aurora instances. After this version went live our connection",
+      "created_at": "2019-10-23T21:33:18+00:00"
+    },
+    {
+      "repo": "p-fedyukovich/nestjs-google-pubsub-microservice",
+      "url": "https://github.com/p-fedyukovich/nestjs-google-pubsub-microservice/issues/47",
+      "title": "Support NestJS 11",
+      "body": "This library does not appear to support NestJS 11\n\n node_modules/nestjs-google-pubsub-microservice/dist/gc-pubsub.client.d.ts:6:22 - error TS2515: Non-abstract class 'GCPubSubClient' does not implement inherited abstract member unwrap from class 'ClientProxy<Record<never, Function>, string>'.\n      \n      6 export declare class GCPubSubClient extends ClientProxy {\n                             ~~~~~~~~~~~~~~\n      node_modules/nestjs-google-pubsub-microservice/dist/gc-pubsub.server.d.ts:5:22 - er",
+      "created_at": "2025-02-15T23:17:11+00:00"
+    },
+    {
+      "repo": "aws/aws-sdk-net",
+      "url": "https://github.com/aws/aws-sdk-net/issues/365",
+      "title": "NullReferenceException when using LoadAsync in DynamoDB with C#",
+      "body": "I am using the DynamoDBV2 library from NuGet - version 3.1.4.1\n\nI use LoadAsync method from a DynamoDBContext context as follows: \n\n```\nusing (DynamoDBContext context = new DynamoDBContext(client, new DynamoDBContextConfig { ConsistentRead = true, SkipVersionCheck = true }))\n{\n     ret = context.LoadAsync<T>(id);\n}\n```\n\nWith this call I get the following exception and cannot figure out if this is a bug in the library or if I am calling it wrong.\n\nSystem.NullReferenceException: Object reference n",
+      "created_at": "2016-06-03T16:32:49+00:00"
+    },
+    {
+      "repo": "chieffancypants/angular-loading-bar",
+      "url": "https://github.com/chieffancypants/angular-loading-bar/issues/258",
+      "title": "In case of 403 error, the loader keeps loading",
+      "body": "At the console it reports:\nBroken interceptor detected: Config object not supplied in rejection: ../.../pull50\nThere are no interceptors in my angular code.\n\nBTW In #177 you mention it has support for error code >= 400, but that nowhere to be found in latest master code?\n",
+      "created_at": "2015-11-23T15:09:44+00:00"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "url": "https://github.com/anthropics/claude-code/issues/50352",
+  "thread": [
+    {
+      "author": "rmurdough",
+      "body": "## Summary\n\nDuring a tech scoping session, Claude repeatedly started implementing code changes (editing files, creating new files) when the user had not asked for implementation \u2014 only Jira ticket scoping and analysis. The user had to explicitly stop Claude twice, and Claude lost context about what kind of task was being performed one prompt after being corrected.\n\n## What went wrong\n\n1. **Implemented during scoping without being asked** \u2014 The conversation was focused on writing a technical scope for a Jira ticket (DEV-541). When the user said a spec file \"needs to be added\" as feedback on the scope, Claude immediately began creating files and modifying source code instead of updating the Jira scope document.\n\n2. **Repeated the mistake after correction** \u2014 After the user stopped Claude and",
+      "created_at": "2026-04-18T10:33:57+00:00",
+      "is_maintainer": false,
+      "type": "description"
+    },
+    {
+      "author": "0xbrainkid",
+      "body": "Claude repeatedly implementing code during a scoping-only session \u2014 despite two explicit stops and a saved memory note \u2014 is the same \"helpfulness overrides instruction\" pattern that has caused dozens of data loss and unauthorized action incidents over the past week.\n\nThe specific failure in your case: \"this needs to be added\" in a scoping context is feedback on the scope document. The model interpreted it as \"implement this now.\" This is a semantic context failure \u2014 the model did not maintain the frame (scoping conversation) and instead pattern-matched on the phrase (\"needs to be added\") as an action trigger.\n\nThe saved memory note being violated mid-conversation confirms the same finding from #50331: persistent context notes and CLAUDE.md rules are advisory, not constraints. When the acti",
+      "created_at": "2026-04-18T10:41:00+00:00",
+      "is_maintainer": false,
+      "type": "comment"
+    }
+  ]
+}
