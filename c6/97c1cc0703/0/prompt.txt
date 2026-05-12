@@ -1,0 +1,5 @@
+In Hero.tsx include the watchtower logo next to Watchtower h1 and it should be responsive
+
+---
+
+where do we check the vita application
